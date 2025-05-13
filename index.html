@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulación de Carga de un Capacitor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Simulación de Carga de un Capacitor</h1>
+    <div class="controls">
+      <label>Voltaje (V): <input type="number" id="voltage" value="5" step="0.1"></label>
+      <label>Resistencia (Ω): <input type="number" id="resistance" value="1000" step="100"></label>
+      <label>Capacitancia (μF): <input type="number" id="capacitance" value="100" step="10"></label>
+      <!-- <button id="startBtn">Iniciar Simulación</button>
+      <button id="dischargeBtn">Iniciar Descarga</button> -->
+    </div>
+    <canvas id="voltageChart"></canvas>
+
+    <canvas id="circuitCanvas" width="600" height="300" style="border:1px solid #ccc; margin-top:20px;"></canvas>
+    <button id="switch">Animar Carga</button>
+   <!--  <button id="dischargeAnimation">Animar Descarga</button> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="main.js"></script>
+  <script src="circuitAnimation.js"></script>
+
+</body>
+</html>
